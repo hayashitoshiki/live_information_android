@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/red_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="赤" />
+
+        <TextView
+            android:id="@+id/lime_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="黄緑" />
+
+        <TextView
+            android:id="@+id/blue_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="青" />
+
+        <TextView
+            android:id="@+id/white_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="白" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/red_image"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/color_red"
+            app:layout_constraintBottom_toBottomOf="@+id/back_setting"
+            app:layout_constraintTop_toBottomOf="@+id/relax_image"
+            app:layout_constraintVertical_bias="0.72" />
+
+        <ImageView
+            android:id="@+id/lime_image"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/color_lime"
+            app:layout_constraintBottom_toBottomOf="@+id/back_setting"
+            app:layout_constraintTop_toBottomOf="@+id/relax_image"
+            app:layout_constraintVertical_bias="0.72" />
+
+        <ImageView
+            android:id="@+id/blue_image"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/color_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/relax_image"
+            app:layout_constraintTop_toBottomOf="@+id/wate_text"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/white_image"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/color_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/relax_image"
+            app:layout_constraintTop_toBottomOf="@+id/wate_text"
+            app:layout_constraintVertical_bias="0.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/red_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/green_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/blue_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/white_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/brown_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="茶" />
+
+        <TextView
+            android:id="@+id/green_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="緑" />
+
+        <TextView
+            android:id="@+id/navy_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="紺" />
+
+        <TextView
+            android:id="@+id/black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="黒" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/brown_image"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/color_brown"
+            app:layout_constraintBottom_toBottomOf="@+id/back_setting"
+            app:layout_constraintTop_toBottomOf="@+id/relax_image"
+            app:layout_constraintVertical_bias="0.72" />
+
+        <ImageView
+            android:id="@+id/green_image"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/color_green"
+            app:layout_constraintBottom_toBottomOf="@+id/back_setting"
+            app:layout_constraintTop_toBottomOf="@+id/relax_image"
+            app:layout_constraintVertical_bias="0.72" />
+
+        <ImageView
+            android:id="@+id/naby_image"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/color_naby"
+            app:layout_constraintBottom_toBottomOf="@+id/back_setting"
+            app:layout_constraintTop_toBottomOf="@+id/relax_image"
+            app:layout_constraintVertical_bias="0.72" />
+
+        <ImageView
+            android:id="@+id/blak_image"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/color_blak"
+            app:layout_constraintBottom_toBottomOf="@+id/back_setting"
+            app:layout_constraintTop_toBottomOf="@+id/relax_image"
+            app:layout_constraintVertical_bias="0.72" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/brown_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/darkgreen_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/darkblue_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/blak_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/pink_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="桃" />
+
+
+
+        <TextView
+            android:id="@+id/yello_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="黄" />
+
+        <TextView
+            android:id="@+id/aqua_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="水色" />
+        <TextView
+            android:id="@+id/gray_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="灰" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/pink_image"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/color_pink"
+            app:layout_constraintBottom_toBottomOf="@+id/back_setting"
+            app:layout_constraintTop_toBottomOf="@+id/relax_image"
+            app:layout_constraintVertical_bias="0.72" />
+
+        <ImageView
+            android:id="@+id/yello_image"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/color_yello"
+            app:layout_constraintBottom_toBottomOf="@+id/back_setting"
+            app:layout_constraintTop_toBottomOf="@+id/relax_image"
+            app:layout_constraintVertical_bias="0.72" />
+
+        <ImageView
+            android:id="@+id/aqua_image"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/color_aqua"
+            app:layout_constraintBottom_toBottomOf="@+id/back_setting"
+            app:layout_constraintTop_toBottomOf="@+id/relax_image"
+            app:layout_constraintVertical_bias="0.72" />
+
+        <ImageView
+            android:id="@+id/gray_image"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/color_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/relax_image"
+            app:layout_constraintTop_toBottomOf="@+id/wate_text"
+            app:layout_constraintVertical_bias="0.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/pink_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/yello_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/aqua_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/gray_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
