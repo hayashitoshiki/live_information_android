@@ -17,19 +17,17 @@ public class CustomPageAdapter extends FragmentPagerAdapter {
     }
 
 
-
-
     @Override
     public Fragment getItem(int position){
         Fragment fragment = null;
         switch(position){
             case 0:
-                fragment = new BackgroundSetting();
+                fragment = new BackgroundFragment();
                 Log.d("CustomPageAdapter","Fragmentセット："+position);
                 cachedFragments.put(position, fragment);
                 break;
             default:
-                fragment = new TextColorSetting();
+                fragment = new TextColorFragment();
                 Log.d("CustomPageAdapter","Fragmentセット："+position);
                 cachedFragments.put(position, fragment);
         }

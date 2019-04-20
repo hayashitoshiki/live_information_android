@@ -1,7 +1,6 @@
 package com.example.tosik.live_information_android;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,14 +14,14 @@ class CustomAdapter extends BaseAdapter {
     private int resourcedId;
     private ArrayList<ArrayList<String>> items;
     private ViewHolder holder;
-    private ColorStack color;
+    private int color;
 
     static class ViewHolder {
         TextView textView;
         TextView button;
     }
 
-    CustomAdapter(Context context, int resourcedId, ArrayList items,ColorStack color) {
+    CustomAdapter(Context context, int resourcedId, ArrayList items,int color) {
         this.inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         this.resourcedId = resourcedId;
         this.items = items;
@@ -52,8 +51,8 @@ class CustomAdapter extends BaseAdapter {
     }
 
     private void setColor(){
-        holder.textView.setTextColor(Color.rgb(color.getRed(),color.getGreen(),color.getBlue()));
-        holder.button.setTextColor(Color.rgb(color.getRed(),color.getGreen(),color.getBlue()));
+        holder.textView.setTextColor(color);
+        holder.button.setTextColor(color);
     }
 
     @Override

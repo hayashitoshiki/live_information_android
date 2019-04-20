@@ -1,39 +1,28 @@
 package com.example.tosik.live_information_android;
 
 
+import android.graphics.Color;
+
 //文字色箱
 public enum ColorStack {
 
-        RED("RED",255,0,0),
-        LIME("LIME",0,255,0),
-        BLUE("BLUE",0,0,255),
-        WHITE("WHITE",255,255,255),
-        BROWN("BROWN",128,0,0),
-        GREEN("GREEN",0,128,0),
-        NAVY("NAVY",0,0,128),
-        BLACK("BLACK",0,0,0),
-        YELLOW("YELLOW",255,255,0),
-        AQUA("AQUA",0,255,255),
-        PINK("PINK",255,0,255),
-        GRAY("GRAY",128,128,128);
+        RED(Color.rgb(255,0,0)),
+        LIME(Color.rgb(0,255,0)),
+        BLUE(Color.rgb(0,0,255)),
+        WHITE(Color.rgb(255,255,255)),
+        BROWN(Color.rgb(128,0,0)),
+        GREEN(Color.rgb(0,128,0)),
+        NAVY(Color.rgb(0,0,128)),
+        BLACK(Color.rgb(0,0,0)),
+        YELLOW(Color.rgb(255,255,0)),
+        AQUA(Color.rgb(0,255,255)),
+        PINK(Color.rgb(255,0,255)),
+        GRAY(Color.rgb(128,128,128));
 
-        private String name;
-        private int red;
-        private int green;
-        private int blue;
+        private int color;
 
-        ColorStack (String name, int red, int green,int blue){
-            this.red = red;
-            this.green = green;
-            this.blue = blue;
-            this.name = name;
-        }
+        ColorStack (int color){ this.color = color; }
 
-        public String getName(){return name;}
-        public int getRed(){return red;}
-        public int getGreen(){return green;}
-        public int getBlue(){return blue;}
-
-
+        public int getColor(){return color;}
 
 }
